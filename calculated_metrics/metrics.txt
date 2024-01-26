@@ -1,18 +1,101 @@
 Graph level features - random_regular_graph
-Global clustering coefficient. Mean 0.19223895005728306 confidence: (0.19112474436374177, 0.19335315575082435)
+Global clustering coefficient. Mean 0.19198005319649533 confidence: (0.19191460013846284, 0.19204550625452788)
 Node level features
-Mean local clustering coefficient. Mean 0.19223895005728306 confidence: (0.19112474436374177, 0.19335315575082435) stddev: 0.004498656961178904
-Mean squared local clustering coefficient. Mean 0.0369761457174931 confidence: (0.03654866156381656, 0.037403629871169644)
+Mean local clustering coefficient. Mean 0.19198005319649533 confidence: (0.19191460013846284, 0.19204550625452788) stddev: 0.004607693387388065
+Mean squared local clustering coefficient. Mean 0.03687763718032089 confidence: (0.03685256233783251, 0.036902712022809266)
 Mean closeness centrality. Mean 0.5540838852097131 confidence: (0.5540838852097131, 0.5540838852097131) stddev: 0.0
-Mean betweeness centrality. Mean 0.0016063490548782905 confidence: (0.0016063490548782905, 0.0016063490548782905) stddev: 9.863998374485767e-06
+Mean betweeness centrality. Mean 0.0016063490548782905 confidence: (0.001606349054878291, 0.0016063490548782913) stddev: 1.0068018912374944e-05
 Mean degree centrality. Mean 98 confidence: (98.0, 98.0) stddev: 0.0
-Mean graphlet count size 3, type 2. Mean 1931162 confidence: (1928498.202710315, 1933825.797289685)
-Mean graphlet count size 3, type 3. Mean 153199 confidence: (152311.06757010496, 154086.93242989504)
-Mean graphlet count size 4, type 4. Mean 40262238.666666664 confidence: (40086467.34344324, 40438009.98989009)
-Mean graphlet count size 4, type 6. Mean 122403248.66666667 confidence: (122158744.57649857, 122647752.75683478)
-Mean graphlet count size 4, type 7. Mean 28892752 confidence: (28788033.77468218, 28997470.22531782)
-Mean graphlet count size 4, type 8. Mean 7301845.333333333 confidence: (7256390.596257239, 7347300.070409427)
-Mean graphlet count size 4, type 9. Mean 3409666 confidence: (3378521.2404624126, 3440810.7595375874)
-Mean graphlet count size 4, type 10. Mean 132491.33333333334 confidence: (130277.35288516535, 134705.31378150132)
+Mean graphlet count size 3, type 2. Mean 1931780.96 confidence: (1931624.477512431, 1931937.4424875688)
+Mean graphlet count size 3, type 3. Mean 152992.68 confidence: (152940.5191708104, 153044.84082918958)
+Mean graphlet count size 4, type 4. Mean 40303023.96 confidence: (40292961.50510324, 40313086.414896764)
+Mean graphlet count size 4, type 6. Mean 122460833.8 confidence: (122445610.64901322, 122476056.95098677)
+Mean graphlet count size 4, type 7. Mean 28868362 confidence: (28862543.625654828, 28874180.374345172)
+Mean graphlet count size 4, type 8. Mean 7312095.26 confidence: (7309714.489881867, 7314476.030118133)
+Mean graphlet count size 4, type 9. Mean 3402588.14 confidence: (3400767.6660197917, 3404408.6139802085)
+Mean graphlet count size 4, type 10. Mean 131931.44 confidence: (131748.77290797915, 132114.10709202086)
 
+Graph level features - barabasi_albert_graph
+Global clustering coefficient. Mean 0.4007994615462522 confidence: (0.4005944055754748, 0.4010045175170294)
+Node level features
+Mean local clustering coefficient. Mean 0.41311070644776804 confidence: (0.41275041862288364, 0.41347099427265244) stddev: 0.04031464559158079
+Mean squared local clustering coefficient. Mean 0.17228575932096518 confidence: (0.17197600046333195, 0.17259551817859842)
+Mean closeness centrality. Mean 0.5967917609766139 confidence: (0.5967802435160667, 0.5968032784371613) stddev: 0.048983254427730404
+Mean betweeness centrality. Mean 0.0013685255723177763 confidence: (0.00136852525862124, 0.0013685258860143125) stddev: 0.001301105318779125
+Mean degree centrality. Mean 157.8131212723658 confidence: (157.81312127236583, 157.81312127236583) stddev: 61.53442811488137
+Mean graphlet count size 3, type 2. Mean 4298843.44 confidence: (4298200.936084249, 4299485.943915752)
+Mean graphlet count size 3, type 3. Mean 958492.43 confidence: (957642.4107366733, 959342.4492633268)
+Mean graphlet count size 4, type 4. Mean 132151861.81 confidence: (131991505.52516814, 132312218.09483187)
+Mean graphlet count size 4, type 6. Mean 248048746.04 confidence: (247840550.19140112, 248256941.88859886)
+Mean graphlet count size 4, type 7. Mean 190182932.48 confidence: (190046009.36497185, 190319855.59502813)
+Mean graphlet count size 4, type 8. Mean 29303320.28 confidence: (29265226.23697381, 29341414.32302619)
+Mean graphlet count size 4, type 9. Mean 66518782.78 confidence: (66424080.59996851, 66613484.960031494)
+Mean graphlet count size 4, type 10. Mean 11216306.06 confidence: (11185217.42511256, 11247394.69488744)
 
+Graph level features - gnp_random_graph (Erdos Renyi)
+Global clustering coefficient. Mean 0.19532680776357492 confidence: (0.19511052094520048, 0.19554309458194935)
+Node level features
+Mean local clustering coefficient. Mean 0.19534211096379173 confidence: (0.1951266942852235, 0.19555752764235995) stddev: 0.005715154043943537
+Mean squared local clustering coefficient. Mean 0.03819230521653621 confidence: (0.038108142637015806, 0.03827646779605661)
+Mean closeness centrality. Mean 0.5541680972829086 confidence: (0.5541067046333215, 0.5542294899324958) stddev: 0.005442148446586049
+Mean betweeness centrality. Mean 0.00160614906358305 confidence: (0.001605750412111045, 0.001606547715055055) stddev: 0.00029519590393517416
+Mean degree centrality. Mean 98.05029821073559 confidence: (97.95003656822335, 98.1505598532478) stddev: 8.88777125057276
+Mean graphlet count size 3, type 2. Mean 1941745.19 confidence: (1938256.4254104386, 1945233.9545895613)
+Mean graphlet count size 3, type 3. Mean 157123.96 confidence: (156634.68672938668, 157613.2332706133)
+Mean graphlet count size 4, type 4. Mean 40929921.54 confidence: (40834469.91291662, 41025373.167083375)
+Mean graphlet count size 4, type 6. Mean 122785677.18 confidence: (122500661.32914113, 123070693.03085889)
+Mean graphlet count size 4, type 7. Mean 29806574.24 confidence: (29698506.563928083, 29914641.916071914)
+Mean graphlet count size 4, type 8. Mean 7450992.89 confidence: (7424164.31103629, 7477821.46896371)
+Mean graphlet count size 4, type 9. Mean 3617996.18 confidence: (3600065.020038848, 3635927.3399611525)
+Mean graphlet count size 4, type 10. Mean 146402.65 confidence: (145456.50490194035, 147348.79509805964)
+
+Graph level features - watts_strogatz_graph
+Global clustering coefficient. Mean 0.19399256802871256 confidence: (0.19391208853123948, 0.19407304752618565)
+Node level features
+Mean local clustering coefficient. Mean 0.19400818851295423 confidence: (0.19392738118742187, 0.19408899583848666) stddev: 0.005237170467672376
+Mean squared local clustering coefficient. Mean 0.03766671483025221 confidence: (0.03763533877212466, 0.03769809088837976)
+Mean closeness centrality. Mean 0.5541133799513197 confidence: (0.5541130334194668, 0.5541137264831726) stddev: 0.0040489902640540015
+Mean betweeness centrality. Mean 0.0016063490548782905 confidence: (0.0016063490548782905, 0.0016063490548782905) stddev: 0.00022133238773917687
+Mean degree centrality. Mean 98 confidence: (98.0, 98.0) stddev: 6.6132277199937715
+Mean graphlet count size 3, type 2. Mean 1935817.32 confidence: (1935633.2789843832, 1936001.361015617)
+Mean graphlet count size 3, type 3. Mean 155306.37 confidence: (155238.55021356017, 155374.18978643982)
+Mean graphlet count size 4, type 4. Mean 40592846.63 confidence: (40580877.29420148, 40604815.96579853)
+Mean graphlet count size 4, type 6. Mean 122511902.94 confidence: (122494549.69055071, 122529256.18944928)
+Mean graphlet count size 4, type 7. Mean 29375837.44 confidence: (29366568.553243957, 29385106.326756045)
+Mean graphlet count size 4, type 8. Mean 7372842.3 confidence: (7370053.629918233, 7375630.970081767)
+Mean graphlet count size 4, type 9. Mean 3521355.28 confidence: (3518760.6748125497, 3523949.88518745)
+Mean graphlet count size 4, type 10. Mean 140176.32 confidence: (139918.98823852217, 140433.65176147784)
+
+Graph level features - weighted multifractal m=2, k=3
+Global clustering coefficient. Mean 0.12486859410516299 confidence: (0.12311441006855312, 0.12662277814177286)
+Node level features
+Mean local clustering coefficient. Mean 0.2343509424166941 confidence: (0.22863761823883091, 0.2400642665945573) stddev: 0.09544330175005793
+Mean squared local clustering coefficient. Mean 0.0648324727135179 confidence: (0.06185472364492457, 0.0678102217821112)
+Mean closeness centrality. Mean 0.4939933842420063 confidence: (0.49194136470554145, 0.496045403778471) stddev: 0.031672784302115634
+Mean betweeness centrality. Mean 0.0020499891917747834 confidence: (0.0020318425059409942, 0.0020681358776085718) stddev: 0.008533695401858523
+Mean degree centrality. Mean 30.572882703777335 confidence: (30.089385496701, 31.05637991085367) stddev: 30.921122512708397
+Mean graphlet count size 3, type 2. Mean 409642.71 confidence: (396458.61710161326, 422826.8028983868)
+Mean graphlet count size 3, type 3. Mean 19736.33 confidence: (18797.678509078396, 20674.981490921607)
+Mean graphlet count size 4, type 4. Mean 14311044.43 confidence: (13490158.453850072, 15131930.406149928)
+Mean graphlet count size 4, type 6. Mean 11083017.8 confidence: (10686678.845911786, 11479356.754088216)
+Mean graphlet count size 4, type 7. Mean 3553938.03 confidence: (3340891.258404321, 3766984.8015956786)
+Mean graphlet count size 4, type 8. Mean 458683.53 confidence: (435571.59642080695, 481795.4635791931)
+Mean graphlet count size 4, type 9. Mean 366290.52 confidence: (337367.5742359838, 395213.46576401626)
+Mean graphlet count size 4, type 10. Mean 14794.42 confidence: (13357.665047865055, 16231.174952134945)
+
+Graph level features - weighted multifractal m=2 k=6
+Global clustering coefficient. Mean 0.07540556702859351 confidence: (0.07421200535616074, 0.07659912870102628)
+Node level features
+Mean local clustering coefficient. Mean 0.10442470553106258 confidence: (0.1015372209159822, 0.10731219014614297) stddev: 0.07277943438574967
+Mean squared local clustering coefficient. Mean 0.016400485349233822 confidence: (0.015517264740150525, 0.017283705958317113)
+Mean closeness centrality. Mean 0.42441319219271634 confidence: (0.4224356200982801, 0.42639076428715245) stddev: 0.03965396415578891
+Mean betweeness centrality. Mean 0.002738310220268199 confidence: (0.0027164519124107007, 0.002760168528125699) stddev: 0.0067461992394727555
+Mean degree centrality. Mean 18.850974155069583 confidence: (18.594691716558028, 19.107256593581138) stddev: 15.845366680894262
+Mean graphlet count size 3, type 2. Mean 136774.76 confidence: (132642.3168564925, 140907.2031435075)
+Mean graphlet count size 3, type 3. Mean 3764.14 confidence: (3587.561097685378, 3940.7189023146216)
+Mean graphlet count size 4, type 4. Mean 2167010.02 confidence: (2011435.878398808, 2322584.1616011923)
+Mean graphlet count size 4, type 6. Mean 2956918 confidence: (2843872.771039728, 3069963.228960272)
+Mean graphlet count size 4, type 7. Mean 410432.31 confidence: (381597.7285776519, 439266.8914223481)
+Mean graphlet count size 4, type 8. Mean 61567.15 confidence: (58233.693944566854, 64900.60605543315)
+Mean graphlet count size 4, type 9. Mean 22423.69 confidence: (20405.5136779054, 24441.866322094596)
+Mean graphlet count size 4, type 10. Mean 523.69 confidence: (463.5314122155805, 583.8485877844197)
