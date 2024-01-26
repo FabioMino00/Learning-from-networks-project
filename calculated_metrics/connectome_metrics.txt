@@ -1,0 +1,16 @@
+Graph level features
+Global clustering coefficient: 0.32200264950245183
+Node level features
+Mean local clustering coefficient: 0.8889921151802328
+Mean squared local clustering coefficient: 0.8466267771917872
+Mean closeness centrality: 0.5489110425227516
+Mean betweeness centrality: 0.0015998829331586553
+Mean degree centrality: 98.03578528827038
+Graphlet size 3 count, type 2: 4201814
+Graphlet size 3 count, type 3: 665192
+Graphlet size 4 count, type 4: 524294022
+Graphlet size 4 count, type 6: 2642274
+Graphlet size 4 count, type 7: 55320300
+Graphlet size 4 count, type 8: 203949
+Graphlet size 4 count, type 9: 100834763
+Graphlet size 4 count, type 10: 12107594

@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import random
 import statsmodels.stats.api as sms
 import numpy as np
+import scipy
 
 # UTILITY FUNCTIONS
 
@@ -84,11 +85,11 @@ def WMGpreprocessing(N, M, K, networkIdx, isDirected, isBinary):
         for idx in range(1, K+1):
             coeffN[i, K-idx] = (i // (M**(idx-1))) % M + 1
 
-    # Calc coefficients m(i,j,i0,j0)
+    # Calc coefficients m[i,j,i0,j0]
     coeffM = np.zeros((M**K, M**K, M, M))
 
     if isDirected:
-        # Directed graph, unsymmetric P, coeffM(i,j,i0,j0)
+        # Directed graph, unsymmetric P, coeffM[i,j,i0,j0]
         for i in range(M**K):
             for j in range(M**K):
                 for i0 in range(1, M+1):
@@ -97,7 +98,7 @@ def WMGpreprocessing(N, M, K, networkIdx, isDirected, isBinary):
                             if coeffN[i, k-1] == i0 and coeffN[j, k-1] == j0:
                                 coeffM[i, j, i0-1, j0-1] += 1
     else:
-        # Undirected graph, symmetric P, coeffM(i,j,i0,j0), where i0<=j0
+        # Undirected graph, symmetric P, coeffM[i,j,i0,j0], where i0<=j0
         for i in range(M**K):
             for j in range(M**K):
                 for i0 in range(1, M+1):
@@ -283,6 +284,21 @@ def varMStep(N, networkIdx, tau, M, K, modelParaP, modelParaPK, iterMaxM, coeffN
 
 
 def EMalgorithm(adj_matrix, N, M, K, isDirected, isBinary, keep_ParaL):
+    """
+    Saves in csv files PK and LK k-1-th kronecker product of the probability 
+    of generating edges p and nodes l using Expectation Maximization algorithm
+    INPUT
+    - adj_matrix of the reference graph that should be similar to the generated
+      weighted multifractal one
+    - N number of nodes in the graph
+    - M Number of rectangle side divisions per iteration
+    - K Number of iterations
+    - flag isDirected
+    - flag isBinary
+    - flag keep_ParaL, training parameter
+    OUTPUT
+    - Results variables saved in csv files
+    """
 
     idx = calcIdx(M, K)  # Function call to calculate index matrix
 
@@ -304,12 +320,9 @@ def EMalgorithm(adj_matrix, N, M, K, isDirected, isBinary, keep_ParaL):
     edgeIdx, edgeCnt, coeffM, coeffN = WMGpreprocessing(N, M, K, networkIdx, isDirected, isBinary)
 
     # Run varEM
-    # networkIdx = adj_d #adj_d discretized matrix
-    # Main algorithm follows, but it's not fully provided in the given code
-    # It involves the reconstruction of the WMGM through a variational EM algorithm
+    # Reconstruction of the WMGM through a variational EM algorithm
     # The algorithm includes E-step and M-step for updating parameters iteratively
     # The stopping criteria include maximum iterations and convergence checks
-    # See the comments in the provided code for details
 
     iterM = np.zeros(iterMax)
     llh = np.zeros((iterMax, 1))
@@ -397,7 +410,7 @@ def generate_adj(PK, LK, LKcum, N, isDirected, isBinary):
                 cmf[q, l, r + 1] = cmf[q, l, r] + (1 - p) * p**r
 
     if isDirected:
-        # Directed graph, unsymmetric P, UNTESTED!!
+        # Directed graph, unsymmetric P
         for i in range(N):
             for j in [x for x in range(i - 1)] + [x for x in range(i + 1, N)]:
                 tmpLink = np.random.rand()
@@ -421,3 +434,14 @@ def generate_adj(PK, LK, LKcum, N, isDirected, isBinary):
         adj[adj > 0] = 1
 
     return adj, class_array
+
+
+def graphToMatAdjMatrix(graph, path, var_name):
+    """
+    Given a networkx graph saves in the path provided a .mat file containing
+    the adjacency matrix to import in matlab in a variable called var_name
+    """
+    adj_matrix = nx.adjacency_matrix(graph).toarray()
+    var_dump = {var_name: adj_matrix}
+    scipy.io.savemat(path, var_dump)
+    return 

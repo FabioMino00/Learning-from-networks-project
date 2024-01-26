@@ -16,12 +16,11 @@ def main():
     # Print nodes info
     print(G)
 
-    N = G.number_of_nodes()
-
     # Reference graph adjacency matrix
     adj_matrix = nx.adjacency_matrix(G).toarray()
 
     # Initialization parameters
+    N = G.number_of_nodes()
     M = 2  # Number of rectangle side divisions per iteration
     K = 3  # Number of iterations
     isDirected = 0  # Flag for directed graph
