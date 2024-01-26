@@ -347,11 +347,11 @@ def EMalgorithm(adj_matrix, N, M, K, isDirected, isBinary, keep_ParaL):
          iterM[iter]) = varMStep(N, networkIdx, tau, M, K, modelParaP, modelParaPK, iterMaxM, coeffN, coeffM, idx, stepLen,
                              isDirected, isBinary, delta_stopping_M, keep_ParaL, modelParaL, modelParaLK)
 
-        paraP_all[:, :, iter - 1] = modelParaP
-        paraL_all[:, iter - 1] = modelParaL
+        paraP_all[:, :, iter] = modelParaP
+        paraL_all[:, iter] = modelParaL
 
         # Print
-        print(f'EM iter={iter} finished, llh={llh[iter - 1]}')
+        print(f'EM iter={iter} finished, llh={llh[iter]}')
         print(modelParaP)
         print(modelParaL)
 
